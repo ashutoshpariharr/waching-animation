@@ -1,0 +1,131 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+ul.navlink {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    width: 30rem;
+}
+
+ul.navlink li {
+    margin-right: 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 7rem; */
+    padding-inline: 10rem;
+}
+
+.left-hero{
+    width: 30rem;
+    margin-top: -4rem;
+}
+
+.right-hero h1{
+    font-size: 3rem;
+    color: rgb(105, 104, 104);
+}
+
+.right-hero h1 span {
+    color: #6abbec;
+}
+
+.right-hero p{
+    color:  rgb(105, 104, 104);
+    /* margin-top: -1rem; */
+}
+
+/* button hover  */
+
+.middleText-btn {
+    --color: #6abbec;
+    font-family: inherit;
+    display: inline-block;
+    background: transparent;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer;
+  }
+  
+  .middleText-btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .middleText-btn:hover {
+    color: #fff;
+  }
+  
+  .middleText-btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .middleText-btn:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .middleText-btn:active:before {
+    background: #6abbec;
+    transition: background 0s;
+  }
+  
+
+  
+#navaa {
+    font-size: 1.2rem;
+    position: relative;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #navaa::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    margin-bottom: -4px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #navaa:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
